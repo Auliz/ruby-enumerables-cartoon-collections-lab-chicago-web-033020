@@ -18,12 +18,6 @@ def long_planeteer_calls(source)
 end
 
 def find_the_cheese(source)
-  i = 0 
   cheese_types = ["cheddar", "gouda", "camembert"]
-  while i < source.length do 
-    source.find {|cheese| cheese == cheese_types[i]}
-    i += 1 
-  end 
-  
-  
+  source.find {|c| c == "cheddar" || c == "gouda" || c == "camembert"}
 end
