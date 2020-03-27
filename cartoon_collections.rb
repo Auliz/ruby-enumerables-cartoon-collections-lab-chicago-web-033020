@@ -17,7 +17,7 @@ def long_planeteer_calls(source)
   source.any? {|words| words.length > 4}
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(source)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  source.find {|cheese| cheese == cheese_types
 end
