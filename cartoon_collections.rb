@@ -19,5 +19,5 @@ end
 
 def find_the_cheese(source)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  source.find {|cheese| cheese == cheese_types[0..-1]}
+  source.find {|cheese| cheese == cheese_types[-1]}
 end
